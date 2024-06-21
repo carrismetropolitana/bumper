@@ -16,8 +16,8 @@ function padNumber(number) {
 const currentDir = process.cwd();
 const packageJsonPath = path.join(currentDir, 'package.json');
 
-const pJson = fs.readFileSync(packageJsonPath, 'utf8');
-const pJsonData = JSON.parse(pJson);
+const packageJsonFile = fs.readFileSync(packageJsonPath, 'utf8');
+const packageJsonData = JSON.parse(packageJsonFile);
 
 const now = new Date();
 const year = now.getFullYear();
@@ -27,8 +27,11 @@ const hours = padNumber(now.getHours());
 const minutes = padNumber(now.getMinutes());
 const seconds = padNumber(now.getSeconds());
 
-const version = `${year}${month}${day}.${hours}${minutes}.${seconds}`;
+const curentPackageVersion = packageJsonData.version;
+const futurePackageVersion = `${year}${month}${day}.${hours}${minutes}.${seconds}`;
 
-pJsonData.version = version;
+packageJsonData.version = futurePackageVersion;
 
-fs.writeFileSync(packageJsonPath, JSON.stringify(pJsonData, null, '\t'));
+fs.writeFileSync(packageJsonPath, JSON.stringify(packageJsonData, null, '\t'));
+
+console.log(`→ Package Version updated from "${curentPackageVersion}" to "${futurePackageVersion}".`);

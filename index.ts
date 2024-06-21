@@ -7,6 +7,12 @@ import path from 'node:path';
 
 /* * */
 
+function padNumber(number) {
+	return number.toString().padStart(2, '0');
+}
+
+/* * */
+
 const currentDir = process.cwd();
 const packageJsonPath = path.join(currentDir, 'package.json');
 
@@ -15,11 +21,14 @@ const pJsonData = JSON.parse(pJson);
 
 const now = new Date();
 const year = now.getFullYear();
-const month = now.getMonth() + 1;
-const seconds = Math.floor(now.getTime() / 1000);
+const month = padNumber(now.getMonth() + 1);
+const day = padNumber(now.getDate());
+const hours = padNumber(now.getHours());
+const minutes = padNumber(now.getMinutes());
+const seconds = padNumber(now.getSeconds());
 
-const version = `${year}.${month}.${seconds}`;
+const version = `${year}${month}${day}.${hours}${minutes}.${seconds}`;
 
 pJsonData.version = version;
 
-fs.writeFileSync(packageJsonPath, JSON.stringify(pJsonData, null, 4));
+fs.writeFileSync(packageJsonPath, JSON.stringify(pJsonData, null, '\t'));

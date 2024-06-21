@@ -1,19 +1,25 @@
-/* * */
-
-import fs from 'fs';
+#!/usr/bin/env node
 
 /* * */
 
-const pJson = fs.readFileSync('./package.json', 'utf8');
+import fs from 'node:fs';
+import path from 'node:path';
+
+/* * */
+
+const currentDir = process.cwd();
+const packageJsonPath = path.join(currentDir, 'package.json');
+
+const pJson = fs.readFileSync(packageJsonPath, 'utf8');
 const pJsonData = JSON.parse(pJson);
 
 const now = new Date();
 const year = now.getFullYear();
-const month = Number(now.getMonth() + 1);
-const seconds = Number(parseInt(String(now.getTime() / 1000)));
+const month = now.getMonth() + 1;
+const seconds = Math.floor(now.getTime() / 1000);
 
 const version = `${year}.${month}.${seconds}`;
 
 pJsonData.version = version;
 
-fs.writeFileSync('./package.json', JSON.stringify(pJsonData, null, 4));
+fs.writeFileSync(packageJsonPath, JSON.stringify(pJsonData, null, 4));

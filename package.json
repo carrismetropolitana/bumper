@@ -36,6 +36,7 @@
 	"author": "João de Vasconcelos",
 	"license": "AGPL-3.0-or-later",
 	"devDependencies": {
-		"@carrismetropolitana/eslint": "2024.6.1718978366"
+		"@carrismetropolitana/eslint": "2024.6.1718984990",
+		"@types/node": "20.14.7"
 	}
 }

@@ -1,38 +1,41 @@
 {
-    "name": "@carrismetropolitana/bumper",
-    "version": "1.0.0",
-    "main": "./dist/index.js",
-    "type": "module",
-    "types": "./dist/index.d.ts",
-    "files": [
-        "dist/"
-    ],
-    "scripts": {
-        "start": "tsc && node dist/index.js",
-        "lint": "eslint .",
-        "lint:fix": "eslint . --fix",
-        "build": "tsc",
-        "watch": "tsc -w"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "homepage": "https://github.com/carrismetropolitana/bumper#readme",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/carrismetropolitana/bumper.git"
-    },
-    "bugs": {
-        "url": "https://github.com/carrismetropolitana/bumper/issues"
-    },
-    "keywords": [
-        "public transit",
-        "version",
-        "lint"
-    ],
-    "author": "João de Vasconcelos",
-    "license": "AGPL-3.0-or-later",
-    "devDependencies": {
-        "@carrismetropolitana/eslint": "2024.6.1718978366"
-    }
+	"name": "@carrismetropolitana/bumper",
+	"version": "1.0.0",
+	"main": "./dist/index.js",
+	"type": "module",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist/"
+	],
+	"scripts": {
+		"start": "tsc && node dist/index.js",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"build": "tsc",
+		"watch": "tsc -w"
+	},
+	"bin": {
+		"bump": "./dist/index.js"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"homepage": "https://github.com/carrismetropolitana/bumper#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/carrismetropolitana/bumper.git"
+	},
+	"bugs": {
+		"url": "https://github.com/carrismetropolitana/bumper/issues"
+	},
+	"keywords": [
+		"public transit",
+		"version",
+		"lint"
+	],
+	"author": "João de Vasconcelos",
+	"license": "AGPL-3.0-or-later",
+	"devDependencies": {
+		"@carrismetropolitana/eslint": "2024.6.1718978366"
+	}
 }

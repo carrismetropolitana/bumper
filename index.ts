@@ -34,4 +34,4 @@ packageJsonData.version = futurePackageVersion;
 
 fs.writeFileSync(packageJsonPath, JSON.stringify(packageJsonData, null, '\t'));
 
-console.log(`→ Package Version updated from "${curentPackageVersion}" to "${futurePackageVersion}".`);
+console.log(`✓ Package Version updated from "${curentPackageVersion}" to "${futurePackageVersion}".`);

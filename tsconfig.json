@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "allowJs": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "declaration": false
+  },
+  "exclude": ["**/node_modules", "**/.*/", "**/dist/"]
+}

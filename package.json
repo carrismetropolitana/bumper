@@ -1,5 +1,5 @@
 {
-	"name": "@carrismetropolitana/bumper",
+	"name": "@helperkits/bumper",
 	"version": "1.0.0",
 	"main": "./dist/index.js",
 	"type": "module",
@@ -20,13 +20,13 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"homepage": "https://github.com/carrismetropolitana/bumper#readme",
+	"homepage": "https://github.com/helperkits/bumper#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/carrismetropolitana/bumper.git"
+		"url": "git+https://github.com/helperkits/bumper.git"
 	},
 	"bugs": {
-		"url": "https://github.com/carrismetropolitana/bumper/issues"
+		"url": "https://github.com/helperkits/bumper/issues"
 	},
 	"keywords": [
 		"public transit",

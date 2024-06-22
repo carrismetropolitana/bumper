@@ -20,7 +20,7 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"homepage": "https://github.com/helperkits/bumper#readme",
+	"homepage": "https://github.com/helperkits/bumper",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/helperkits/bumper.git"

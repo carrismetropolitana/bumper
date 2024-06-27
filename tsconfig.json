@@ -5,6 +5,7 @@
 		"rootDir": ".",
 		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
+		"paths": {},
 		"allowJs": true,
 		"outDir": "dist",
 		"sourceMap": true,

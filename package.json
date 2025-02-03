@@ -1,42 +1,42 @@
 {
 	"name": "@helperkits/bumper",
 	"version": "1.0.0",
-	"type": "module",
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"files": ["dist/"],
-	"scripts": {
-		"start": "tsc && resolve-tspaths && node dist/index.js",
-		"lint": "eslint .",
-		"lint:fix": "eslint . --fix",
-		"build": "tsc && resolve-tspaths",
-		"watch": "tsc -w"
-	},
-	"bin": {
-		"bump": "./dist/index.js"
-	},
-	"publishConfig": {
-		"access": "public"
-	},
+	"author": "João de Vasconcelos",
+	"license": "AGPL-3.0-or-later",
 	"homepage": "https://github.com/helperkits/bumper",
+	"bugs": {
+		"url": "https://github.com/helperkits/bumper/issues"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/helperkits/bumper.git"
-	},
-	"bugs": {
-		"url": "https://github.com/helperkits/bumper/issues"
 	},
 	"keywords": [
 		"public transit",
 		"version",
 		"lint"
 	],
-	"author": "João de Vasconcelos",
-	"license": "AGPL-3.0-or-later",
+	"publishConfig": {
+		"access": "public"
+	},
+	"type": "module",
+	"files": ["dist/"],
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "tsc && resolve-tspaths",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"start": "tsc && resolve-tspaths && node dist/index.js",
+		"watch": "tsc -w"
+	},
+	"bin": {
+		"bump": "./dist/index.js"
+	},
 	"devDependencies": {
-		"@carrismetropolitana/eslint": "20240622.50.2",
-		"@types/node": "20.14.9",
-		"resolve-tspaths": "0.8.19",
-		"typescript": "5.5.2"
+		"@carrismetropolitana/eslint": "20250128.1601.13",
+		"@types/node": "22.13.0",
+		"resolve-tspaths": "0.8.23",
+		"typescript": "5.7.3"
 	}
 }

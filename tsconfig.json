@@ -1,16 +1,16 @@
 {
 	"compilerOptions": {
-		"target": "ESNext",
+		"allowJs": true,
 		"baseUrl": ".",
-		"rootDir": ".",
+		"declaration": true,
+		"esModuleInterop": true,
 		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
-		"paths": {},
-		"allowJs": true,
 		"outDir": "dist",
+		"paths": {},
+		"rootDir": ".",
 		"sourceMap": true,
-		"esModuleInterop": true,
-		"declaration": true
+		"target": "ESNext"
 	},
 	"exclude": ["**/node_modules", "**/.*/", "**/dist/"]
 }
